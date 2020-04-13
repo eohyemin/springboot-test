@@ -10,7 +10,7 @@ public class BookRestService {
     private final RestTemplate restTemplate;
 
     public BookRestService(RestTemplateBuilder restTemplateBuilder) {
-        this.restTemplate = restTemplateBuilder.rootUri("/rest/test").build();
+        this.restTemplate = restTemplateBuilder.build();
     }
 
     public Book getRestBook() {
